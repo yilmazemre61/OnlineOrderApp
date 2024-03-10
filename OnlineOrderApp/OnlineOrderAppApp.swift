@@ -11,7 +11,7 @@ import SwiftUI
 struct OnlineOrderAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppetizerTapView()
         }
     }
 }

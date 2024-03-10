@@ -9,7 +9,12 @@ import SwiftUI
 
 struct AppetizerListView: View {
     var body: some View {
-        Text("Apetizer List View")
+        NavigationStack{
+            List(MockData.appetizers) {appetizer in
+                AppetizerListCell(appetizer: appetizer)
+            }
+            .navigationTitle("🍟 Appetizers")
+        }
     }
 }
 
