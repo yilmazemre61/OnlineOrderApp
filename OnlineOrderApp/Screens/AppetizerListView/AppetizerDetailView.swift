@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct DetailView: View {
+struct AppetizerDetailView: View {
     let appetizer: Appetizer
+    @Binding var isShowingDetailView: Bool
     
     var body: some View {
         VStack {
-            Image("asian-flank-steak")
-                .resizable()
+            AppetizerRemoteImage(urlString: appetizer.imageURL)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height: 225)
             
@@ -83,7 +83,7 @@ struct DetailView: View {
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .shadow(radius: 40)
         .overlay(Button {
-            print("dismiss")
+            isShowingDetailView = false
         } label: {
             ZStack {
                 Circle()
@@ -101,5 +101,5 @@ struct DetailView: View {
 }
 
 #Preview {
-    DetailView(appetizer: MockData.sampleAppetizer)
+    AppetizerDetailView(appetizer: MockData.sampleAppetizer, isShowingDetailView: .constant(true))
 }

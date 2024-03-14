@@ -23,7 +23,7 @@
 		D39DAE4F2B9FAA9D00FD1179 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DAE4E2B9FAA9D00FD1179 /* LoadingView.swift */; };
 		D39DAE512B9FAC2C00FD1179 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DAE502B9FAC2C00FD1179 /* Color+Ext.swift */; };
 		D3B830242BA0EBC100C1E362 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B830232BA0EBC100C1E362 /* RemoteImage.swift */; };
-		D3B830332BA0F3C400C1E362 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B830322BA0F3C400C1E362 /* DetailView.swift */; };
+		D3B830332BA0F3C400C1E362 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B830322BA0F3C400C1E362 /* AppetizerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,7 @@
 		D39DAE4E2B9FAA9D00FD1179 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		D39DAE502B9FAC2C00FD1179 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		D3B830232BA0EBC100C1E362 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
-		D3B830322BA0F3C400C1E362 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D3B830322BA0F3C400C1E362 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 			children = (
 				D35F9DE42B965CE600CBCCDF /* AppetizerListView.swift */,
 				D356F3222B9E6CA5007918B2 /* AppetizerListViewModel.swift */,
-				D3B830322BA0F3C400C1E362 /* DetailView.swift */,
+				D3B830322BA0F3C400C1E362 /* AppetizerDetailView.swift */,
 			);
 			path = AppetizerListView;
 			sourceTree = "<group>";
@@ -293,7 +293,7 @@
 				D356F3212B9E4526007918B2 /* AppetizerError.swift in Sources */,
 				D356F3252B9E6E7B007918B2 /* Alert.swift in Sources */,
 				D3368BA92B9017670054FFDA /* OnlineOrderAppApp.swift in Sources */,
-				D3B830332BA0F3C400C1E362 /* DetailView.swift in Sources */,
+				D3B830332BA0F3C400C1E362 /* AppetizerDetailView.swift in Sources */,
 				D35F9DE92B965D0F00CBCCDF /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
