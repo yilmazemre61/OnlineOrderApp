@@ -27,6 +27,8 @@
 		D3D366742BA5E3BB00FF0A03 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D366732BA5E3BB00FF0A03 /* AccountViewModel.swift */; };
 		D3D366762BA5E54900FF0A03 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D366752BA5E54900FF0A03 /* String+Ext.swift */; };
 		D3D366782BA5E9E300FF0A03 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D366772BA5E9E300FF0A03 /* User.swift */; };
+		D3D3667B2BA5F92C00FF0A03 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3667A2BA5F92C00FF0A03 /* EmptyState.swift */; };
+		D3D3667D2BA5FCF500FF0A03 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3667C2BA5FCF500FF0A03 /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		D3D366732BA5E3BB00FF0A03 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		D3D366752BA5E54900FF0A03 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		D3D366772BA5E9E300FF0A03 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D3D3667A2BA5F92C00FF0A03 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		D3D3667C2BA5FCF500FF0A03 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,7 @@
 			children = (
 				D35F9DEA2B9663FD00CBCCDF /* Appetizer.swift */,
 				D3D366772BA5E9E300FF0A03 /* User.swift */,
+				D3D3667C2BA5FCF500FF0A03 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 		D3B8302E2BA0F27000C1E362 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D3D366792BA5F90300FF0A03 /* Empty States */,
 				D3B830302BA0F28600C1E362 /* Cells */,
 				D3B830312BA0F28D00C1E362 /* Image */,
 				D3B8302F2BA0F27900C1E362 /* UIKit Components */,
@@ -217,6 +223,14 @@
 				D3B830232BA0EBC100C1E362 /* RemoteImage.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		D3D366792BA5F90300FF0A03 /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				D3D3667A2BA5F92C00FF0A03 /* EmptyState.swift */,
+			);
+			path = "Empty States";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +305,7 @@
 			files = (
 				D35F9DEB2B9663FD00CBCCDF /* Appetizer.swift in Sources */,
 				D35F9DED2B96914400CBCCDF /* AppetizerListCell.swift in Sources */,
+				D3D3667D2BA5FCF500FF0A03 /* Order.swift in Sources */,
 				D35F9DE72B965D0300CBCCDF /* AccountView.swift in Sources */,
 				D3D366762BA5E54900FF0A03 /* String+Ext.swift in Sources */,
 				D356F3232B9E6CA5007918B2 /* AppetizerListViewModel.swift in Sources */,
@@ -303,6 +318,7 @@
 				D3D366742BA5E3BB00FF0A03 /* AccountViewModel.swift in Sources */,
 				D356F3212B9E4526007918B2 /* AppetizerError.swift in Sources */,
 				D356F3252B9E6E7B007918B2 /* Alert.swift in Sources */,
+				D3D3667B2BA5F92C00FF0A03 /* EmptyState.swift in Sources */,
 				D3D366782BA5E9E300FF0A03 /* User.swift in Sources */,
 				D3368BA92B9017670054FFDA /* OnlineOrderAppApp.swift in Sources */,
 				D3B830332BA0F3C400C1E362 /* AppetizerDetailView.swift in Sources */,
