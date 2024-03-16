@@ -29,36 +29,9 @@ struct AppetizerDetailView: View {
                 .padding()
             
             HStack (spacing: 40){
-                VStack (spacing: 5){
-                    Text("Calories")
-                        .bold()
-                        .font(.caption)
-                        .padding(5)
-                    Text("\(appetizer.calories)")
-                        .foregroundStyle(.secondary)
-                        .fontWeight(.semibold)
-                        .italic()
-                }
-                VStack (spacing: 5){
-                    Text("Carbs")
-                        .bold()
-                        .font(.caption)
-                        .padding(5)
-                    Text("\(appetizer.carbs) g")
-                        .foregroundStyle(.secondary)
-                        .fontWeight(.semibold)
-                        .italic()
-                }
-                VStack (spacing: 5){
-                    Text("Protein")
-                        .bold()
-                        .font(.caption)
-                        .padding(5)
-                    Text("\(appetizer.protein) g")
-                        .foregroundStyle(.secondary)
-                        .fontWeight(.semibold)
-                        .italic()
-                }
+                NutritionInfor(titte: "Calories", value: appetizer.calories)
+                NutritionInfor(titte: "Carbs", value: appetizer.carbs)
+                NutritionInfor(titte: "Protein", value: appetizer.protein)
             }
             
             Spacer()
@@ -82,6 +55,7 @@ struct AppetizerDetailView: View {
         .background(Color(.systemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .shadow(radius: 40)
+        // X button to dismiss the view
         .overlay(Button {
             isShowingDetailView = false
         } label: {
@@ -102,4 +76,24 @@ struct AppetizerDetailView: View {
 
 #Preview {
     AppetizerDetailView(appetizer: MockData.sampleAppetizer, isShowingDetailView: .constant(true))
+}
+
+
+struct NutritionInfor: View {
+    
+    let titte: String
+    let value: Int
+    
+    var body: some View {
+        VStack (spacing: 5){
+            Text(titte)
+                .bold()
+                .font(.caption)
+                .padding(5)
+            Text("\(value)")
+                .foregroundStyle(.secondary)
+                .fontWeight(.semibold)
+                .italic()
+        }
+    }
 }
