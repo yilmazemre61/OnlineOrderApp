@@ -27,14 +27,15 @@ struct OrderView: View {
                         print("order placed")
                     } label: {
                         Text("$\(order.totalPrice, specifier: "%.2f") - Place Order")
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                            .frame(width: 260, height: 50)
-                            .foregroundStyle(.white)
+//                            .font(.title3)
+//                            .fontWeight(.semibold)
+//                            .frame(width: 260, height: 50)
+//                            .foregroundStyle(.white)
                     }
-                    .frame(width: 250, height: 50)
-                    .background(Color("brandPrimary"))
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .modifier(StandardButtomStyle())
+//                    .frame(width: 250, height: 50)
+//                    .background(Color("brandPrimary"))
+//                    .clipShape(RoundedRectangle(cornerRadius: 10))
                     .padding(.bottom,25)
                 }
                 if order.items.isEmpty {

@@ -31,9 +31,9 @@ struct AppetizerDetailView: View {
                 .padding()
             
             HStack (spacing: 40){
-                NutritionInfor(titte: "Calories", value: appetizer.calories)
-                NutritionInfor(titte: "Carbs", value: appetizer.carbs)
-                NutritionInfor(titte: "Protein", value: appetizer.protein)
+                NutritionInfor(titte: "Calories", value: "\(appetizer.calories)")
+                NutritionInfor(titte: "Carbs", value: "\(appetizer.carbs) g")
+                NutritionInfor(titte: "Protein", value: "\(appetizer.protein) g")
             }
             
             Spacer()
@@ -43,16 +43,12 @@ struct AppetizerDetailView: View {
                 isShowingDetailView = false
             } label: {
                 Text("$\(appetizer.price, specifier: "%.2f") - Add To Order")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .frame(width: 260, height: 50)
-                    .foregroundStyle(.white)
             }
-            .frame(width: 250, height: 50)
-            .background(Color("brandPrimary"))
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-            
-            Spacer()
+            .modifier(StandardButtomStyle())
+//            .buttonStyle(.bordered)
+//            .tint(.brandPrimary)
+//            .controlSize(.large)
+            .padding(.bottom, 30)
         }
         .frame(width: 300, height: 525)
         .background(Color(.systemBackground))
@@ -85,7 +81,7 @@ struct AppetizerDetailView: View {
 struct NutritionInfor: View {
     
     let titte: String
-    let value: Int
+    let value: String
     
     var body: some View {
         VStack (spacing: 5){

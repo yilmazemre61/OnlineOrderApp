@@ -29,6 +29,7 @@
 		D3D366782BA5E9E300FF0A03 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D366772BA5E9E300FF0A03 /* User.swift */; };
 		D3D3667B2BA5F92C00FF0A03 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3667A2BA5F92C00FF0A03 /* EmptyState.swift */; };
 		D3D3667D2BA5FCF500FF0A03 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3667C2BA5FCF500FF0A03 /* Order.swift */; };
+		D3D3667F2BA60EE200FF0A03 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3667E2BA60EE200FF0A03 /* CustomModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		D3D366772BA5E9E300FF0A03 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D3D3667A2BA5F92C00FF0A03 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		D3D3667C2BA5FCF500FF0A03 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		D3D3667E2BA60EE200FF0A03 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				D3B830302BA0F28600C1E362 /* Cells */,
 				D3B830312BA0F28D00C1E362 /* Image */,
 				D3B8302F2BA0F27900C1E362 /* UIKit Components */,
+				D3D3667E2BA60EE200FF0A03 /* CustomModifiers.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				D356F31F2B9E4393007918B2 /* NetworkManager.swift in Sources */,
 				D3368BAB2B9017670054FFDA /* AppetizerTapView.swift in Sources */,
 				D3B830242BA0EBC100C1E362 /* RemoteImage.swift in Sources */,
+				D3D3667F2BA60EE200FF0A03 /* CustomModifiers.swift in Sources */,
 				D3D366742BA5E3BB00FF0A03 /* AccountViewModel.swift in Sources */,
 				D356F3212B9E4526007918B2 /* AppetizerError.swift in Sources */,
 				D356F3252B9E6E7B007918B2 /* Alert.swift in Sources */,
