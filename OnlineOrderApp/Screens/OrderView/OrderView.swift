@@ -19,16 +19,14 @@ struct OrderView: View {
                         ForEach(order.items) {appetizer in
                             AppetizerListCell(appetizer: appetizer)
                         }
-                        .onDelete(perform: { indexSet in
-                            order.items.remove(atOffsets: indexSet)
-                        })
+                        .onDelete(perform: order.deleteItems)
                     }
                     .listStyle(PlainListStyle())
                     
                     Button {
                         print("order placed")
                     } label: {
-                        Text("$99 - Place Order")
+                        Text("$\(order.totalPrice, specifier: "%.2f") - Place Order")
                             .font(.title3)
                             .fontWeight(.semibold)
                             .frame(width: 260, height: 50)
@@ -46,6 +44,7 @@ struct OrderView: View {
             .navigationTitle("💼 Order")
         }
     }
+    
 }
 
 #Preview {

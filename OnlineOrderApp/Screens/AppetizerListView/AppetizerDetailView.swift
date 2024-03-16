@@ -40,6 +40,7 @@ struct AppetizerDetailView: View {
             
             Button {
                 order.add(appetizer)
+                isShowingDetailView = false
             } label: {
                 Text("$\(appetizer.price, specifier: "%.2f") - Add To Order")
                     .font(.title3)
